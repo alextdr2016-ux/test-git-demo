@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabrex2 — Cloud Solutions</title>
+  <meta name="description" content="Fabrex — implementare și mentenanță aplicații în cloud." />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand:#000000; --accent:#ffffff; }
+    html { scroll-behavior:smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .logo-text { font-weight: 800; font-size: 1.5rem; letter-spacing: -0.5px; }
+  </style>
+</head>
+<body class="bg-white text-black">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="logo-text">Fabrex</a>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="#home" class="hover:text-gray-500">Acasă</a>
+        <a href="#produse" class="hover:text-gray-500">Produse</a>
+        <a href="#despre" class="hover:text-gray-500">Despre</a>
+        <a href="#contact" class="hover:text-gray-500">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-flex px-4 py-2 rounded-2xl bg-black hover:bg-gray-800 text-white font-semibold shadow">Cere ofertă</a>
+      <button id="menuBtn" class="md:hidden inline-flex p-2 rounded-lg border" aria-label="Open menu">☰</button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-2 flex flex-col gap-2 text-sm">
+        <a href="#home" class="py-2">Acasă</a>
+        <a href="#produse" class="py-2">Produse</a>
+        <a href="#despre" class="py-2">Despre</a>
+        <a href="#contact" class="py-2">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative bg-black text-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center py-20">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Soluții moderne de <span class="text-gray-300">cloud computing</span></h1>
+        <p class="mt-4 text-gray-300 text-lg">Fabrex oferă servicii complete de implementare și mentenanță a aplicațiilor în cloud. Simplu, rapid și sigur.</p>
+        <div class="mt-6">
+          <a href="#contact" class="px-6 py-3 rounded-2xl bg-white text-black font-semibold shadow hover:bg-gray-200">Cere ofertă</a>
+        </div>
+      </div>
+      <div>
+        <div class="aspect-[4/3] rounded-2xl shadow-lg overflow-hidden border bg-white text-black grid place-items-center">
+          <h3 class="text-2xl font-extrabold">Fabrex</h3>
+          <p class="mt-2">Logo simplu — text-based</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produse -->
+  <section id="produse" class="py-16 border-t">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Produse și servicii</h2>
+      <p class="mt-2 text-gray-600">Soluții personalizate pentru infrastructura cloud.</p>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="rounded-2xl border overflow-hidden hover:shadow-lg transition bg-white">
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Implementare cloud</h3>
+            <p class="mt-1 text-sm text-gray-600">Migrare rapidă și sigură a aplicațiilor în cloud.</p>
+          </div>
+        </article>
+        <article class="rounded-2xl border overflow-hidden hover:shadow-lg transition bg-white">
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Mentenanță</h3>
+            <p class="mt-1 text-sm text-gray-600">Monitorizare continuă și suport tehnic dedicat.</p>
+          </div>
+        </article>
+        <article class="rounded-2xl border overflow-hidden hover:shadow-lg transition bg-white">
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Consultanță</h3>
+            <p class="mt-1 text-sm text-gray-600">Strategii de optimizare pentru infrastructura cloud.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Despre -->
+  <section id="despre" class="py-16 border-t bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold">Despre Fabrex</h2>
+        <p class="mt-4 text-gray-700 leading-relaxed">Fabrex este o companie care se ocupă cu implementarea și mentenanța aplicațiilor în cloud. Oferim servicii moderne, adaptate nevoilor clienților, cu accent pe siguranță și performanță.</p>
+        <p class="mt-2 text-gray-700">Cu o echipă dedicată și soluții inovative, ajutăm companiile să își optimizeze infrastructura IT și să își crească eficiența.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-6 shadow">
+        <h3 class="font-bold text-lg">Date cheie</h3>
+        <div class="mt-3 grid grid-cols-3 gap-4 text-center">
+          <div><div class="text-2xl font-extrabold">24/7</div><div class="text-xs text-gray-600">Suport</div></div>
+          <div><div class="text-2xl font-extrabold">100+</div><div class="text-xs text-gray-600">Proiecte</div></div>
+          <div><div class="text-2xl font-extrabold">Cloud</div><div class="text-xs text-gray-600">Expertiză</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 border-t">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Contact</h2>
+      <form class="mt-8 grid md:grid-cols-2 gap-6 max-w-3xl" onsubmit="return handleSubmit(event)">
+        <div class="grid gap-2">
+          <label class="text-sm font-semibold">Nume</label>
+          <input required name="name" class="border rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-black" placeholder="Numele tău" />
+        </div>
+        <div class="grid gap-2">
+          <label class="text-sm font-semibold">Email</label>
+          <input required type="email" name="email" class="border rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-black" placeholder="email@exemplu.com" />
+        </div>
+        <div class="md:col-span-2 grid gap-2">
+          <label class="text-sm font-semibold">Mesaj</label>
+          <textarea required name="message" rows="5" class="border rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-black" placeholder="Spune-ne mai multe..."></textarea>
+        </div>
+        <div>
+          <button class="px-6 py-3 rounded-2xl bg-black hover:bg-gray-800 text-white font-semibold">Trimite</button>
+        </div>
+        <p id="formStatus" class="self-center text-sm text-gray-600"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="border-t">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>© <span id="year"></span> Fabrex. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Mulțumim! Mesajul a fost înregistrat local (demo).';
+      return false;
+    }
+  </script>
+</body>
+</html>
